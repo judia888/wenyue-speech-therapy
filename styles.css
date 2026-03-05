@@ -821,32 +821,84 @@ h1 {
   }
 }
 
-.faq-layout {
-  display: flex;
-  gap: 2.5rem;
-  align-items: center; /* 图片垂直居中 */
+.faq-section{
+  padding: 80px 10%;
+  background:#f9fafb;
 }
 
-.faq-content {
-  flex: 1;
+/* layout */
+
+.faq-layout{
+  display:flex;
+  gap:60px;
+  align-items:flex-start;
 }
 
-.faq-image {
-  flex: 0 0 280px;
+/* 左侧内容 */
+
+.faq-content{
+  flex:2;
 }
 
-.faq-image img {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: var(--shadow);
+.faq-item{
+  margin-bottom:30px;
 }
 
-@media (max-width: 768px) {
-  .faq-layout {
-    flex-direction: column;
-  }
+.faq-item h3{
+  font-size:20px;
+  margin-bottom:8px;
+  color:#1a1a1a;
+}
 
-  .faq-image {
-    max-width: 320px;
-  }
+.faq-item p{
+  line-height:1.6;
+  color:#555;
+}
+
+/* list */
+
+.disclosure-list{
+  margin-top:10px;
+  padding-left:20px;
+}
+
+.disclosure-list li{
+  margin-bottom:5px;
+  color:#444;
+}
+
+/* 右侧图片 */
+
+.faq-image{
+  flex:1;
+}
+
+.faq-image img{
+  width:100%;
+  border-radius:14px;
+  object-fit:cover;
+}
+
+/* ------------------ */
+/* 平板 */
+@media (max-width:1000px){
+
+.faq-layout{
+  gap:40px;
+}
+
+}
+
+/* ------------------ */
+/* 手机 */
+@media (max-width:768px){
+
+.faq-layout{
+  flex-direction:column;
+}
+
+.faq-image{
+  margin-top:30px;
+}
+
 }
