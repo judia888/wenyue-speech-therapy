@@ -890,11 +890,11 @@ h1 {
 @media (max-width:768px){
 
 .faq-layout{
-  flex-direction:column;
+  flex-direction:column-reverse;
 }
 
 .faq-image{
-  margin-top:30px;
+  margin-top:10px;
 }
 
 }
